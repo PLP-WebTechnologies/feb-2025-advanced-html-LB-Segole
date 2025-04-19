@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer Contact Assignment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #0a3d62;
+    }
+
+    ol {
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0a3d62;
+      color: white;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      max-width: 700px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fdfdfd;
+      transition: border 0.3s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #0a3d62;
+      outline: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #0a3d62;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #145889;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SGL Developments - Tech Contact Submission</h1>
+
+  <!-- Ordered List: Assignment steps -->
+  <h2>Project Steps</h2>
+  <ol type="I">
+    <li>Define your personal or business information.</li>
+    <li>Display key contact data in table format.</li>
+    <li>Create a fully functional HTML contact form.</li>
+  </ol>
+
+  <!-- Image: Example code snippet -->
+  <h2>Inspiration: CSS Code Sample</h2>
+  <img src="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=400" alt="css code">
+
+  <!-- Table: Developer contacts -->
+  <h2>Team Contact Directory</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>123 Mulan Street</td>
+        <td>+27 78 568 8925</td>
+        <td>email@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Bob Smith</td>
+        <td>456 Oak Avenue, Lincoln</td>
+        <td>+1-555-234-5678</td>
+        <td>bob@example.com</td>
+      </tr>
+      <tr>
+        <td>Carol Davis</td>
+        <td>789 Pine Road, Madison</td>
+        <td>+1-555-345-6789</td>
+        <td>carol@example.com</td>
+      </tr>
+      <tr>
+        <td>David Miller</td>
+        <td>321 Birch Blvd, Jackson</td>
+        <td>+1-555-456-7890</td>
+        <td>david@example.com</td>
+      </tr>
+      <tr>
+        <td>Eva Wilson</td>
+        <td>654 Cedar Lane, Franklin</td>
+        <td>+1-555-567-8901</td>
+        <td>eva@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Form: Developer interest contact form -->
+  <h2>Join the SGL Dev Community</h2>
+  <!-- Start of form -->
+  <form action="/submit-form" method="post">
+
+    <!-- Name input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email input -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="8">
+
+    <!-- Date input -->
+    <label for="birth">Date of Birth:</label>
+    <input type="date" id="birth" name="date" required>
+
+    <!-- Dropdown -->
+    <label for="country">Country of Origin:</label>
+    <select id="country" name="country" required>
+      <option value="">--Select your country--</option>
+      <option value="rsa">South Africa</option>
+      <option value="ke">Kenya</option>
+      <option value="ug">Uganda</option>
+      <option value="in">India</option>
+    </select>
+
+    <!-- Radio buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br><br>
+
+    <!-- Checkboxes -->
+    <label>Areas of Interest (select all that apply):</label><br>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label>
+    <input type="checkbox" id="ai" name="interests" value="ai">
+    <label for="ai">AI & Machine Learning</label>
+    <input type="checkbox" id="startup" name="interests" value="startup">
+    <label for="startup">Startup Building</label><br><br>
+
+    <!-- Message textarea -->
+    <label for="message">Why do you want to join SGL Developments?</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write a brief message..." required></textarea>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+  <!-- End of form -->
+
+</body>
+</html>
